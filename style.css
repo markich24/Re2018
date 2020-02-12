@@ -114,13 +114,21 @@ h1{
 .block_after_dinner{
     padding-top: 30px;
     width: 24%;
+    margin-left: -82px;
 
+}
+
+.after_dinner0 {
+    font-size: 24px;
+    font-family: 'Myriad Pro';
 }
 
 .after_dinner1{
     font-size: 24px;
     font-family: 'Myriad Pro';
+    padding-left: 85px;
 }
+
 .after_dinner2{
     font-size: 16px;
     font-family: 'Oswald';
@@ -128,21 +136,38 @@ h1{
 
 
 
-.bagage{
+.baggage{
     max-width: 600px;
-    margin: auto;
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
+    margin-left: 200px;
 }
 
+.baggage .description_1{
+    padding-left: 13px;
+    padding-top: 15px;
+}
 
+.baggage .description_2{
+    padding-left: 35px;
+    padding-top: 23px;
+}
 
-/*.flex-container{*/
-/*    height: 600px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-around;*/
-/*}*/
+@media only screen and (max-width: 768px) {
+    .baggage{
+        margin-left: 120px;
+    }
 
+    .border{
+        width: 580px;
+    }
+}
 
+@media only screen and (max-width: 375px) {
+    .container_description{
+      display: flex;
+      flex-direction: column;
+     }
+
+}
