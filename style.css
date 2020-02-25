@@ -13,7 +13,7 @@
 @font-face {
     font-family:'Myriad Pro';
     src: url('fonts/MyriadPro-Bold.eot');
-    src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
     url('fonts/MyriadPro-Bold.woff2') format('woff2'),
     url('fonts/MyriadPro-Bold.woff') format('woff'),
     url('fonts/MyriadPro-Bold.ttf') format('truetype'),
@@ -70,7 +70,7 @@ h1{
     justify-content: space-between;
     padding-top: 32px;
     padding-bottom: 32px;
-    /*flex-flow: wrap;*/
+
 
 }
 .description_1{
@@ -87,8 +87,6 @@ h1{
     padding-top: 10px;
     font-family: 'Oswald';
 }
-
-
 
 
 .container_after_dinner {
@@ -160,14 +158,33 @@ h1{
     }
 
     .border{
-        width: 580px;
+        display: none;
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and  (max-width: 576px) {
     .container_description{
       display: flex;
       flex-direction: column;
-     }
 
+     }
+    .container_description img{
+     width: 200px;
+    }
+
+    .container_after_dinner{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .baggage{
+        margin-left: 0;
+
+    }
+    .baggage_img{
+        display: none;
+    }
 }
+
